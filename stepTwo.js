@@ -1,7 +1,7 @@
 const addToZero = nums => {
     const seenNums = [];
 
-    for(let i = 0; nums.length; i++) {
+    for(let i = 0; i < nums.length; i++) {
         const num = nums[i]
 
         if(seenNums.includes(-num)){
@@ -49,7 +49,7 @@ const findLongestWord = wordsArr => {
 }
 
 
-console.log(addToZero([1, 2, 3, -2])); // I think this will take about 40 μs
+console.log(addToZero([1])); // I think this will take about 40 μs
 console.log(hasUniqueChars('Moonday')); // I think this will take about 20 μs
 console.log(isPangram('The quick brown fox jumps over the lazy dog!')); // I think this will take about 50 μs
 console.log(findLongestWord(["hi", "hello", "it", "hello", "devmountain"])); // I think this will take about 70 μs
